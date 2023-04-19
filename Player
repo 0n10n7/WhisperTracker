@@ -1,0 +1,20 @@
+using System;
+
+namespace WhisperTracker
+{
+    public class Player
+    {
+        public string _titel;        
+        public DateTime _startTid;
+        public Player(string titel, DateTime startTid)
+        {
+            _titel = titel;
+            _startTid = startTid;
+        }
+
+        public string TillText()
+        {
+            return $"{_titel} - Start {_startTid.ToString("HH:mm:ss")} End ";
+        }
+    }
+}
